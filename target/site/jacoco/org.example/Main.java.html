@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Lab03-JavaV2</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package org.example;
+
+<span class="nc" id="L3">public class Main {</span>
+    public static void main(String[] args) {
+        // Zadanie 2.
+<span class="nc" id="L6">        System.out.println(&quot;\n____Lab03 - Zadanie 2. - Kolory Figur____\n&quot;);</span>
+
+<span class="nc" id="L8">        Color redColor = new Color(255, 0, 0, 255);</span>
+<span class="nc" id="L9">        Color blueColor = new Color(0, 0, 255, 128);</span>
+
+<span class="nc" id="L11">        Triangle myTriangle = new Triangle(5, 11, 15, redColor);</span>
+<span class="nc" id="L12">        Rectangle myRectangle = new Rectangle(5, 10, blueColor);</span>
+
+<span class="nc" id="L14">        System.out.println(&quot;Opis trójkąta:&quot;);</span>
+<span class="nc" id="L15">        System.out.println(&quot;Pole: &quot; + myTriangle.getArea());</span>
+<span class="nc" id="L16">        System.out.println(&quot;Obwód: &quot; + myTriangle.getPerimeter());</span>
+<span class="nc" id="L17">        System.out.println(&quot;Kolor: &quot; + myTriangle.getColorDescription());</span>
+
+<span class="nc" id="L19">        System.out.println(&quot;\nOpis prostokąta:&quot;);</span>
+<span class="nc" id="L20">        System.out.println(&quot;Pole: &quot; + myRectangle.getArea());</span>
+<span class="nc" id="L21">        System.out.println(&quot;Obwód: &quot; + myRectangle.getPerimeter());</span>
+<span class="nc" id="L22">        System.out.println(&quot;Kolor: &quot; + myRectangle.getColorDescription());</span>
+
+        // Zadanie 3.
+<span class="nc" id="L25">        System.out.println(&quot;\n____ Zadanie 3. - Logowanie SLF4J____\n&quot;);</span>
+
+<span class="nc" id="L27">        Color greenColor = new Color(0, 255, 0, 128);</span>
+
+<span class="nc" id="L29">        Triangle myTriangle2 = new Triangle(3, 4, 5, redColor);</span>
+<span class="nc" id="L30">        Triangle myTriangle3 = new Triangle(6, 7, 8, greenColor);</span>
+<span class="nc" id="L31">        Rectangle myRectangle2 = new Rectangle(5, 10, greenColor);</span>
+<span class="nc" id="L32">        Rectangle myRectangle3 = new Rectangle(2, 3, blueColor);</span>
+
+<span class="nc" id="L34">        ShapeDescriber.describe(myTriangle2);</span>
+<span class="nc" id="L35">        ShapeDescriber.describe(myTriangle3);</span>
+<span class="nc" id="L36">        ShapeDescriber.describe(myRectangle2);</span>
+<span class="nc" id="L37">        ShapeDescriber.describe(myRectangle3);</span>
+<span class="nc" id="L38">    }</span>
+
+
+    public static void helloWordFunc() {
+<span class="nc" id="L42">        System.out.println(&quot;Hello World! :)&quot;);</span>
+<span class="nc" id="L43">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
